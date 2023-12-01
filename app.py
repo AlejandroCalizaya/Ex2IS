@@ -35,8 +35,6 @@ class Cuenta:
             if cuenta.numero == numerodestino:
                 cuenta.saldo += valor
                 cuenta.operaciones.append(Operacion(self.numero, fecha, valor))
-        date = datetime.now()
-        fecha = date.strftime("%d/%m/%Y")
         return f"Realizado en {fecha}"
 
 BD.append(Cuenta("21345", "Arnaldo", 200, ["123", "456"]))
